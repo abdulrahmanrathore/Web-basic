@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    body{
+      font-family: cursive;
+      background: black;
+    }
+
+    #box{
+      width: 300px;
+      height: 300px;
+      padding: 30px;
+      border-radius: 7px;
+      background: linear-gradient(-45deg,#ACC0FE,#4B086D); /*linear-gradient works from one side to another. Here we can also give the color directions in digonal like [linear-gradient(to right, red, yellow)] the dignal values are{to right, to left, to top, to bottom}   we can give the directions in degree too like 45deg(here deg stand for degree), 120deg, -45deg etc. we can give here more than two colors. but we have to declare direction first(if we want ), then colors. if don't want to give color  we can. its totally depends on our choice.*/
+    }
+
+    #box2{
+      margin-top: 20px;
+      width: 800px;
+      height: 300px;
+      padding: 30px;
+      border: 3px solid black;
+      background: repeating-linear-gradient(to right,red,yellow 10%,green 20%); /*repeating-linear-gradient works as same like linear-gradient but the additional thing is that it repeats the color when we declare it's direction and we can declare the color quantity in percentage(%) just beside the color name. For direction the values are same as linear gradient*/
+    }
+
+    #box3{
+      margin-top: 20px;
+      width: 800px;
+      height: 300px;
+      padding: 30px;
+      border: 3px solid black;
+      background: radial-gradient(farthest-corner at 5% 5%,red,yellow,green); /*radial-gradient works as same like linear-gradient but it starts from center(by default) to any point we can give direction to any of the point we want like repeating-linear-gradient and the additional thing is that it repeats the color when we declare it's direction and give eclipse shape we can give the shape circle and we can declare the color quantity in percentage(%) just beside the color name. For direction values are same as linear-gradient. Even we can give here many sides like closest-site at, farthest-site at, closests-corner at, farthest-site at, after 'at' we have to declare persent(%) for both X-axis and Y-axis.*/
+    }
+
+    #box4{
+      margin-top: 20px;
+      width: 800px;
+      height: 300px;
+      padding: 30px;
+      border: 3px solid black;
+      background: repeating-radial-gradient(circle,red,yellow 50px,green 100px); /*radial-gradient works as same like repeating-linear-gradient but it starts from center(default) to any point we can give direction to any of the point we want like repeating-linear-gradient and the additional thing is that it repeats the color when we declare it's direction and give eclipse shape we can give the shape circle and we can declare the color quantity in percentage(%) just beside the color name. For direction values are same as linear-gradient. Even we can give here many sides like closest-site at, farthest-site at, closests-corner at, farthest-site at, after 'at' we have to declare persent(%) for both X-axis and Y-axis.*/
+    }
+    hr{
+      height: 80px;
+      border-radius: 10px;
+      background: linear-gradient(to right,#F7EF8A,#AEB625,#D2AC47,#AEB625,#EDC967);
+    }
+</style>
+</head>
+<body>
+  <h1>Yahoo Baba : CSS Gradient Background.</h1>
+  <hr>
+  <hr>
+  <hr>
+  <div id="box">
+    <h2>linear-gradient</h2>
+  </div>
+
+  <div id="box2">
+    <h2>repeating-linear-gradient</h2>
+  </div>
+
+  <div id="box3">
+    <h2>radial-gradient</h2>
+  </div>
+
+  <div id="box4">
+    <h2>repeating-radial-gradient</h2>
+  </div>
+</body>
+</html>

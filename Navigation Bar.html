@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Navigation_bar.css">
+  <script src="script.js" charset="utf-8"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <input type="checkbox" id="btn">
+      <a href="#">MENU</a>
+      <a href="#">PRODUCTS</a>
+      <a href="#">ABOUT</a>
+      <a href="#">CONTACT</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+ const btn = document.querySelector("#btn");
+ const header = document.querySelector(".header");
+ btn.addEventListener("click",()=>{
+ var htop = header.computedStyleMap().get('top').value;
+ console.log(htop);
+ if(htop == "-140"){
+   header.style.top = "0px";
+ }else {
+   header.style.top = "-140px";
+ }
+})
+  </script>
+</body>
+</html>

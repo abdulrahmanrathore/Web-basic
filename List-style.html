@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    ul{
+      list-style-type: circle; /* values are :- disk, circle, square and none*/
+      list-style-position: outside; /* values are :- inside and outside. Here potion is outside*/
+      list-style-image:url('image/play button.png'); /*picture is downloaded from the wedsite- www.iconfinder.com 16px image is downloaded. */
+      border: 5px solid red;
+    }
+
+
+/* It is for shot-hand*/
+    ul.second{
+      list-style: none inside url('image/play button.png');  /*here inside postion is working so therefore the list a     little moved from left corner of the border*/
+    }
+
+    ol{
+      list-style-type:upper-alpha;    /*values are :- upper-alpha, lower-alpha, upper-roman, lower-roman, decimal and none */
+      list-style-position: outside;
+
+    }
+  </style>
+</head>
+<body>
+  <h1>Yahoo Baba: CSS List style</h1>
+  <ul>
+    <li>Orange</li>
+    <li>Apple</li>
+    <li>Grapes</li>
+    <li>Banana</li>
+    <li>Pineapple</li>
+  </ul>
+
+  <ul class="second"> <!-- for shot hand-->
+    <li>Orange</li>
+    <li>Apple</li>
+    <li>Grapes</li>
+    <li>Banana</li>
+    <li>Pineapple</li>
+  </ul>
+
+  <ol>
+    <li>Orange</li>
+    <li>Apple</li>
+    <li>Grapes</li>
+    <li>Banana</li>
+    <li>Pineapple</li>
+  </ol>
+
+</body>
+</html>

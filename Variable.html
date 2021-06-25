@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Basic Layout</title>
+  <style media="screen">
+    :root{
+       --main-color: linear-gradient(-45deg,#CCFBFF,#EF96C5);
+    }
+
+    body{
+      margin: auto;
+      padding: inherit;
+      font-family: arial, helvetica;
+      background: slategrey;
+    }
+
+    #wrapper{
+      border: 0px solid black;
+      width: 1000px;
+      background: white;
+      margin: 0 auto;
+
+    }
+    #header{
+      background: var(--main-color);
+      color: white;
+      height: 100px;
+    }
+    #header h1{
+      padding: 30px 0 0 20px;
+    }
+    #menu{
+      background: lightsalmon;
+    }
+    #menu ul{
+      margin: 0;
+      padding: 0;
+    }
+    #menu li{
+      display: inline-block;
+    }
+    #menu li a{
+      display: block;
+      padding: 10px 13px;
+      text-decoration: none;
+      color: black;
+
+    }
+
+    #menu li a:hover{
+      background: var(--main-color);
+      color: white;
+    }
+    #content{
+      width: 800px;
+      min-height: 500px;
+      padding: 10px;
+      float: left;
+      box-sizing: border-box;
+    }
+    #content h2{
+      margin: auto;
+      text-align: left;
+      color: transparent;
+      background-image: var(--main-color);
+      font-size:40px;
+      -webkit-background-clip: text;
+    }
+    #sidebar{
+      background: lightblue;
+      width: 200px;
+      min-height: 500px;
+      float: right;
+    }
+    #sidebar a{
+      text-decoration: none;
+      color: black;
+    }
+    #footer{
+      background: var(--main-color);
+      clear: both;
+      text-align: right;
+      padding: 5px 10px;
+    }
+    h1{
+      margin: auto;
+    }
+
+    @media screen and (max-width:1020px){
+      #wrapper{
+        width: 800px;
+      }
+      #content{
+        width: 80%;
+      }
+      #sidebar{
+        width: 18%;
+      }
+    }
+    @media screen and (max-width:810px){
+      #wrapper{
+        width: 500px;
+      }
+      #content{
+        width: 65%;
+      }
+      #sidebar{
+        width: 34%;
+      }
+    }
+    @media screen and (max-width:510px){
+      #wrapper{
+        width: auto;
+      }
+      #content{
+        width: 100%;
+        float: none;
+      }
+      #sidebar{
+        width: 100%;
+        float: none;
+      }
+      #header h1{
+        padding: 30px 0 0 0;
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <h1>Yahoo Baba</h1>
+    </div>
+    <div id="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h2>Design Basic Layout</h2>
+      <p>
+        Bubble sort is one of the easiest sorting techniques in programming and it is very simple to implement. It just simply compares the current element with the next element and swaps it, if it is greater or less, depending on the condition. It gives quite accurate results. Each time an element is compared with all other elements till it’s final place is found is called a pass.
+        Bubble sort is one of the easiest sorting techniques in programming and it is very simple to implement. It just simply compares the current element with the next element and swaps it, if it is greater or less, depending on the condition. It gives quite accurate results. Each time an element is compared with all other elements till it’s final place is found is called a pass.
+      </p>
+
+      <p>
+        Bubble sort is one of the easiest sorting techniques in programming and it is very simple to implement. It just simply compares the current element with the next element and swaps it, if it is greater or less, depending on the condition. It gives quite accurate results. Each time an element is compared with all other elements till it’s final place is found is called a pass.
+        Bubble sort is one of the easiest sorting techniques in programming and it is very simple to implement. It just simply compares the current element with the next element and swaps it, if it is greater or less, depending on the condition. It gives quite accurate results. Each time an element is compared with all other elements till it’s final place is found is called a pass.
+
+      </p>
+    </div>
+    <div id="sidebar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div id="footer">
+      yahoobaba@copyright 2021.
+    </div>
+  </div>
+</body>
+</html>

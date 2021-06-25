@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    body{
+      font-family: monospace;
+      background:linear-gradient(-45deg,#BAD4E3,#F9D9E1);
+      margin: auto;
+      padding: inherit;
+    }
+    div{
+      display: inline-block;
+      border: 0px solid black;
+      border-radius: 10px;
+      box-shadow: 2px 3px 10px #1F2933, -2px 3px 10px #1F2933;
+      text-align: center;
+      width: 160px;
+      height: 160px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+    #box1{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: auto;
+    }
+    #box2{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: default;
+    }
+    #box3{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: none;
+    }
+    #box4{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: context-menu;
+    }
+    #box5{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: help;
+    }
+    #box6{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: pointer;
+    }
+    #box7{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: progress;
+    }
+    #box8{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: wait;
+    }
+    #box9{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: cell;
+    }
+    #box10{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: crosshair;
+    }
+    #box11{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: text;
+    }
+    #box12{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: vertical-text;
+    }
+    #box13{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: alias;
+    }
+    #box14{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: copy;
+    }
+    #box15{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: move;
+    }
+    #box16{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: no-drop;
+    }
+    #box17{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: not-allowed;
+    }
+    #box18{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: e-resize;
+    }
+    #box19{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: n-resize;
+    }
+    #box20{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: ne-resize;
+    }
+    #box21{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: nw-resize;
+    }
+    #box22{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: s-resize;
+    }
+    #box23{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: se-resize;
+    }
+    #box24{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: sw-resize;
+    }
+    #box25{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: w-resize;
+    }
+    #box26{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: ew-resize;
+    }
+    #box27{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: ns-resize;
+    }
+    #box28{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: nesw-resize;
+    }
+    #box29{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: nwse-resize;
+    }
+    #box30{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: col-resize;
+    }
+    #box31{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: row-resize;
+    }
+    #box32{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: all-scroll;
+    }
+    #box33{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: zoom-in;
+    }
+    #box34{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: zoom-out;
+    }
+    #box35{
+      background:linear-gradient(-45deg,#014871,#D7EDE2);
+      cursor: grab;
+    }
+    #box36{
+      background:linear-gradient(120deg,#E65758,#771D32);
+      cursor: grabbing;
+    }
+   header, h1{
+      margin: 0;
+      padding: 0px;
+      font-size: 50px;
+      color: #354B58;
+      text-align: center;
+    }
+
+    }
+    h2{
+        margin: 0;
+        padding: 5px;
+        font-size: 20px;
+        color: #002661;
+        text-align: center;
+
+      }
+     hr{
+       background-color: #022534;
+       height: 3px;
+       padding: 0;
+       margin: 0 0 25px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yahoo Baba: CSS Cursor</h1>
+  </header>
+  <hr>
+
+  <div id="box1">
+    <h2>auto</h2>
+  </div>
+  <div id="box2">
+    <h2>default</h2>
+  </div>
+  <div id="box3">
+    <h2>none</h2>
+  </div>
+  <div id="box4">
+    <h2>context-menu</h2>
+  </div>
+  <div id="box5">
+    <h2>help</h2>
+  </div>
+  <div id="box6">
+   <h2>pointer</h2>
+  </div>
+  <div id="box7">
+    <h2>progress</h2>
+  </div>
+  <div id="box8">
+    <h2>wait</h2>
+  </div>
+  <div id="box9">
+    <h2>cell</h2>
+  </div>
+  <div id="box10">
+    <h2>crosshair</h2>
+  </div>
+  <div id="box11">
+    <h2>text</h2>
+  </div>
+  <div id="box12">
+    <h2>vertical-text</h2>
+  </div>
+  <div id="box13">
+    <h2>alias</h2>
+  </div>
+  <div id="box14">
+    <h2>copy</h2>
+  </div>
+  <div id="box15">
+    <h2>move</h2>
+  </div>
+  <div id="box16">
+    <h2>no-drop</h2>
+  </div>
+  <div id="box17">
+    <h2>not-allowed</h2>
+  </div>
+  <div id="box18">
+    <h2>e-resize</h2>
+  </div>
+  <div id="box19">
+   <h2>n-resize</h2>
+  </div>
+  <div id="box20">
+    <h2>ne-resize</h2>
+  </div>
+  <div id="box21">
+    <h2>nw-resize</h2>
+  </div>
+  <div id="box22">
+    <h2>s-resize</h2>
+  </div>
+  <div id="box23">
+    <h2>se-resize</h2>
+  </div>
+  <div id="box24">
+    <h2>sw-resize</h2>
+  </div>
+  <div id="box25">
+    <h2>w-resize</h2>
+  </div>
+  <div id="box26">
+    <h2>ew-resize</h2>
+  </div>
+  <div id="box27">
+    <h2>ns-resize</h2>
+  </div>
+  <div id="box28">
+    <h2>nesw-resize</h2>
+  </div>
+  <div id="box29">
+    <h2>nwse-resize</h2>
+  </div>
+  <div id="box30">
+    <h2>col-resize</h2>
+  </div>
+  <div id="box31">
+    <h2>row-resize</h2>
+  </div>
+  <div id="box32">
+    <h2>all-scroll</h2>
+  </div>
+  <div id="box33">
+    <h2>zoom-in</h2>
+  </div>
+  <div id="box34">
+    <h2>zoom-out</h2>
+  </div>
+  <div id="box35">
+    <h2>grab</h2>
+  </div>
+  <div id="box36">
+    <h2>grabbing</h2>
+  </div>
+</body>
+</html>
